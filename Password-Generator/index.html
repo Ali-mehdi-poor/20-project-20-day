@@ -19,7 +19,7 @@
   </head>
   <body>
     <section class="wrapper row">
-        <section class="password-wrapper col-6">
+        <section class="password-wrapper col-md-6">
           <h2 class="title">Password Generator</h2>
           <div class="result-wrapper">
             <span id="result"></span>
@@ -28,29 +28,30 @@
             </button>
           </div>
           <div class="settings">
-            <div class="setting">
+            <div class="range-setting">
               <label>Password Length</label>
+              <br />
               <input type="range" id="length" min="4" max="20" value="20" />
             </div>
             <div class="setting">
-              <label>do you want have uppercase letters?</label>
+              <label>uppercase letters</label>
               <input type="checkbox" id="uppercase" checked />
             </div>
             <div class="setting">
-              <label>do you want have lowercase letters?</label>
+              <label>lowercase letters</label>
               <input type="checkbox" id="lowercase" checked />
             </div>
             <div class="setting">
-              <label>do you want have numbers?</label>
+              <label>numbers</label>
               <input type="checkbox" id="numbers" checked />
             </div>
             <div class="setting">
-              <label>do you want have symbols?</label>
+              <label>symbols</label>
               <input type="checkbox" id="symbols" checked />
             </div>
           </div>
         </section>
-        <section class="history-wrapper col-6">
+        <section class="history-wrapper col-md-6">
           <h2 class="title">Passwords History</h2>
           <!-- history wrapper -->
           <ul class="history-list">
