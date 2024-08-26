@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../PUBLIC_ASSETS/all.min.css">
-    <link rel="stylesheet" href="../PUBLIC_ASSETS/bootstrap.min.css">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- local CDN -->
+    <link rel="stylesheet" href="../PUBLIC_ASSETS/all.min.css" />
+    <link rel="stylesheet" href="../PUBLIC_ASSETS/bootstrap.min.css" />
+
+    <!-- online CDN (if local CDN files dont work this can be execute) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- style files -->
+    <link rel="stylesheet" href="./index.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
-    
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="password-wrapper">
+        <h2>Password Generator</h2>
+        <div class="result-wrapper">
+          <span id="result"></span>
+          <button class="btn" id="clipboard">
+            <i class="fa fa-clipboard"></i>
+          </button>
+        </div>
+        <div class="settings">
+          <div class="setting">
+            <label>Password Length</label>
+            <input type="range" id="length" min="4" max="20" value="20" />
+          </div>
+          <div class="setting">
+            <label>do you want have uppercase letters?</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+          <div class="setting">
+            <label>do you want have lowercase letters?</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+          <div class="setting">
+            <label>do you want have numbers?</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+          <div class="setting">
+            <label>do you want have symbols?</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+      </section>
+      <section class="history-wrapper">
+
+        <!-- history wrapper -->
+
+      </section>
+    </section>
+
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
