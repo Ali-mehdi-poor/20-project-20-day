@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #503C3C;
-  --secondry-color: #7E6363;
-  --btn-color: #A87C7C;
+  --primary-color: #503c3c;
+  --secondry-color: #7e6363;
+  --btn-color: #a87c7c;
   --texts-color: #d2d2d2;
 }
 
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    color: var(--texts-color);
+  color: var(--texts-color);
   background-color: var(--primary-color);
   display: flex;
   width: 100%;
@@ -75,9 +75,9 @@ body {
 #length {
   width: 100%;
 }
-#generate{
-    background-color: var(--btn-color);
-    padding: 1rem 2rem;
+#generate {
+  background-color: var(--btn-color);
+  padding: 1rem 2rem;
 }
 .history-wrapper {
   background-color: var(--secondry-color);
@@ -89,6 +89,7 @@ body {
   padding: 2rem 0;
 }
 .history-list {
+  background-color: var(--btn-color);
   overflow-y: scroll;
   width: 80%;
   height: 20rem;
