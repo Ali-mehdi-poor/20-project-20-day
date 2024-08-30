@@ -23,7 +23,8 @@ generateBtn.addEventListener("click" , (e) => {
     const hasSymbol = symbolsElem.checked
 
     let newPassword = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
-
+    allPasswordsData.push(newPassword)
+    renderHistory(allPasswordsData)
     result.innerText = newPassword
 })
 
@@ -35,6 +36,44 @@ mainClipboardBtn.addEventListener("click" , (e) => {
      window.navigator.clipboard.writeText(password);
      alert("password copied!");
 })
+
+function generateHistoryItem (arr) {
+    const mappedArr = arr.map(function (item) {
+        const itemElem = document.createElement("li");
+        itemElem.classList = "history-item"
+
+        const passwordElem = document.createElement("p");
+        passwordElem.innerHTML = item.toString();
+       
+
+        const buttonElem = document.createElement("button");
+        buttonElem.classList = "btn h-clipboard";
+        buttonElem.addEventListener("click", e => {
+
+            window.navigator.clipboard.writeText(e.target.parentElement.parentElement.firstChild.innerHTML)
+            alert("password copied!");
+        })
+
+        const iconElem = document.createElement("i");
+        iconElem.classList = "fa fa-clipboard";
+
+        itemElem.append(passwordElem); 
+        buttonElem.append(iconElem);
+        itemElem.append(buttonElem);
+
+        return itemElem;
+    })
+
+    return mappedArr
+}
+
+function renderHistory(arr) {
+    let items = generateHistoryItem(arr)
+    historyListContainer.innerHTML = ""
+    items.forEach(item => {
+        historyListContainer.append(item)
+    })
+}
 
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = ''
