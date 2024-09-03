@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- online CDN (if local CDN files dont work this can be execute) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    
-    <!-- style files -->     
-    <link rel="stylesheet" href="app.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- style files -->
+    <link rel="stylesheet" href="app.css" />
     <title>Todo List Application</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text text-center mt-5">Todo list Application</h1>
 
+      <div class="input-group mb-3 mt-4">
+        <input
+          type="text"
+          class="form-control p-4"
+          placeholder="Write a Todo"
+          aria-label="Write a Todo"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-primary p-4"
+          type="button"
+          id="button-addon2"
+        >
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
 
+      <div class="colors d-flex flex-wrap gap-2 mb-3 mt-4 ">
+          <div data-color="bg-red" class="color border border-black bg-red rounded-circle"></div>
+          <div data-color="bg-green" class="color border border-black bg-green rounded-circle"></div>
+          <div data-color="bg-yellow" class="color border border-black bg-yellow rounded-circle"></div>
+          <div data-color="bg-blue" class="color border border-black bg-blue rounded-circle"></div>
+          <div data-color="bg-orange" class="color border border-black bg-orange rounded-circle"></div>
+          <div data-color="bg-violet" class="color border border-black bg-violet rounded-circle"></div>
+          <div data-color="bg-pink" class="color border border-black bg-pink rounded-circle"></div>
+          <div data-color="bg-purple" class="color border border-black bg-purple rounded-circle"></div>
+          <div data-color="bg-gold" class="color border border-black bg-gold rounded-circle"></div>
+          <div data-color="bg-silver" class="color border border-black bg-silver rounded-circle"></div>
+      </div>
+
+      <h5 class="text text-secondary my-4">* Click left to delete</h5>
+
+      <div class="row text-center  row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+          <div class="col ">
+            <div class="p-5 shadow">item</div>
+          </div>
+          <div class="col ">
+            <div class="p-5 shadow">item</div>
+          </div>
+          <div class="col ">
+            <div class="p-5 shadow">item</div>
+          </div>
+          <div class="col ">
+            <div class="p-5 shadow">item</div>
+          </div>
+    </div>
+    </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
