@@ -1,5 +1,5 @@
 :root {
-  --text-color:#000;
+  --text-color: #000;
 }
 
 html {
@@ -13,4 +13,39 @@ html {
   box-sizing: inherit;
 }
 
+.color {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
 
+.bg-red{
+  background-color: rgb(255, 67, 67);
+}
+.bg-green{
+  background-color: rgb(117, 235, 0);
+}
+.bg-yellow{
+  background-color: rgb(255, 255, 19);
+}
+.bg-blue{
+  background-color: rgb(82, 82, 255);
+}
+.bg-orange{
+  background-color: rgb(255, 186, 58);
+}
+.bg-violet{
+  background-color: rgb(238, 130, 238);
+}
+.bg-pink{
+  background-color: rgb(255, 192, 203);
+}
+.bg-purple{
+  background-color: rgb(128, 0, 128);
+}
+.bg-gold{
+  background-color: rgb(255, 215, 0);
+}
+.bg-silver{
+  background-color: rgb(211, 211, 211);
+}
