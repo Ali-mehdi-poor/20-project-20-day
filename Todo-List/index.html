@@ -27,6 +27,7 @@
       <div class="input-group mb-3 mt-4">
         <input
           type="text"
+          id="todoInput"
           class="form-control p-4"
           placeholder="Write a Todo"
           aria-label="Write a Todo"
@@ -35,34 +36,29 @@
         <button
           class="btn btn-outline-primary p-4"
           type="button"
-          id="button-addon2"
+          id="addTodoBtn"
         >
           <i class="fa fa-plus"></i>
         </button>
       </div>
 
       <div class="colors d-flex flex-wrap gap-2 mb-3 mt-4 ">
-          <div data-color="bg-red" class="color border border-black bg-red rounded-circle"></div>
-          <div data-color="bg-green" class="color border border-black bg-green rounded-circle"></div>
-          <div data-color="bg-yellow" class="color border border-black bg-yellow rounded-circle"></div>
-          <div data-color="bg-blue" class="color border border-black bg-blue rounded-circle"></div>
-          <div data-color="bg-orange" class="color border border-black bg-orange rounded-circle"></div>
-          <div data-color="bg-violet" class="color border border-black bg-violet rounded-circle"></div>
-          <div data-color="bg-pink" class="color border border-black bg-pink rounded-circle"></div>
-          <div data-color="bg-purple" class="color border border-black bg-purple rounded-circle"></div>
-          <div data-color="bg-gold" class="color border border-black bg-gold rounded-circle"></div>
-          <div data-color="bg-silver" class="color border border-black bg-silver rounded-circle"></div>
+          <div data-color="#ff4343" class="color border border-black bg-red rounded-circle"></div>
+          <div data-color="#75eb00" class="color border border-black bg-green rounded-circle"></div>
+          <div data-color="#ffff13" class="color border border-black bg-yellow rounded-circle"></div>
+          <div data-color="#5252ff" class="color border border-black bg-blue rounded-circle"></div>
+          <div data-color="#ffba3a" class="color border border-black bg-orange rounded-circle"></div>
+          <div data-color="#ee82ee" class="color border border-black bg-violet rounded-circle"></div>
+          <div data-color="#ffc0cb" class="color border border-black bg-pink rounded-circle"></div>
+          <div data-color="#800080" class="color border border-black bg-purple rounded-circle"></div>
+          <div data-color="#ffd700" class="color border border-black bg-gold rounded-circle"></div>
+          <div data-color="#d3d3d3" class="color border border-black bg-silver rounded-circle"></div>
+          <div data-color="#ffffff" class="color border border-black bg-white rounded-circle"></div>
       </div>
 
       <h5 class="text text-secondary my-4">* Click left to delete</h5>
 
-      <div class="row text-center  row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-
-          <div class="col ">
-            <div class="p-5 shadow">item</div>
-          </div>
-          
-        </div>
+      <div id="todos-wrapper" class="row text-center row-cols-2 row-cols-lg-3 g-2 g-lg-3"></div>
     </div>
     <script src="app.js"></script>
   </body>
