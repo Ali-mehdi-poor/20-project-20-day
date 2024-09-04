@@ -12,12 +12,24 @@ colorsElems.forEach(color => {
     });
 });
 
-addTodoBtn.addEventListener("click" , event => {
-    let newTodo = createTodo(todoInputElem.value,todoInputElem.style.backgroundColor)
-    todosWrapper.appendChild(newTodo)
-    todoInputElem.value = ""
-    todoInputElem.style.backgroundColor = "#fff"
+todoInputElem.addEventListener("keydown", event => {
+    if (event.keyCode == 13) {
+        addTodoHandler()
+    }
 })
+
+addTodoBtn.addEventListener("click" , event => {
+    addTodoHandler()
+})
+
+function addTodoHandler(){
+    if(todoInputElem.value){
+        let newTodo = createTodo(todoInputElem.value,todoInputElem.style.backgroundColor)
+        todosWrapper.appendChild(newTodo)
+        todoInputElem.value = ""
+        todoInputElem.style.backgroundColor = "#fff"
+    }
+}
 
 function createTodo(todoContent, color) {
     const todoCol = $.createElement("div")
