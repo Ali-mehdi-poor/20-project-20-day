@@ -21,4 +21,8 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
             <td>3. Todo List Application</td>
             <td>Complete</td>
         </tr>
+        <tr>
+            <td>4. Counter App</td>
+            <td>pending...</td>
+        </tr>
     </table>
