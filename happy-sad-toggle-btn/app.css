@@ -1,16 +1,100 @@
-:root {
-  --text-color:#000;
-}
-
 html {
-  font-size: 67.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15rem;
+  height: 7.5rem;
+  background-color: red;
+  border-radius: 4rem;
+  transition: all 375ms ease-in-out;
+}
+.checkbox-wrapper--active{
+  background-color: rgb(0, 255, 0);
+}
+.checkbox {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.state {
+  position: absolute;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 375ms ease-in-out;
+  transform: translateX(-3.5rem);
+}
+.state--active {
+  transform: translateX(3.5rem);
+}
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.eyes.eyes--active > div{
+  background-color: rgb(0, 255, 0);
+}
+.eye {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  margin-top: 1rem;
+  transition: all 375ms ease-in-out;
 }
 
+.mouth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mouth__wrapper {
+  position: relative;
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 20rem;
+  background-color: rgb(255, 0, 0);
+  transition: all 375ms ease-in-out;
+}
+.mouth__wrapper--active{
+  background-color: rgb(0, 255, 0);
+}
+
+.state--active > .mouth > .mouth__wrapper {
+  position: relative;
+  border-radius: 0;
+  width: 3.5rem;
+  height: 1.5rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
 

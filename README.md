@@ -27,6 +27,6 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
         </tr>
         <tr>
             <td>5. Happy/Sad toggle btn</td>
-            <td>pending... </td>
+            <td>Complete </td>
         </tr>
     </table>
