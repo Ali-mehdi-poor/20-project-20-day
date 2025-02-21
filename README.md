@@ -4,12 +4,6 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
 
 # Projects :
 
-<style>
-    table {
-        width: 100%;
-    }
-</style>
-
 | Project Name  | Status |
 | ------------- | ------------- |
 | 1. Password Generator  | Complete  |
