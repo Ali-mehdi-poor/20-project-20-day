@@ -4,29 +4,10 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
 
 # Projects :
 
-<table>
-        <tr>
-            <th>Project Name</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>1. Password Generator</td>
-            <td>Complete</td>
-        </tr>
-        <tr>
-            <td>2. Keycode Information</td>
-            <td>Complete</td>
-        </tr>
-        <tr>
-            <td>3. Todo List Application</td>
-            <td>Complete</td>
-        </tr>
-        <tr>
-            <td>4. Counter App</td>
-            <td>Complete</td>
-        </tr>
-        <tr>
-            <td>5. Happy/Sad toggle btn</td>
-            <td>Complete </td>
-        </tr>
-    </table>
+| Project Name  | Status |
+| ------------- | ------------- |
+| 1. Password Generator  | Complete  |
+| 2. Keycode Information  | Complete  |
+| 3. Todo List Application  | Complete  |
+| 4. Counter App  | Complete  |
+| 5. Happy/Sad toggle btn  | Complete  |
