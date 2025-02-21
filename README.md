@@ -4,7 +4,7 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
 
 # Projects :
 
-<table style="width: 15rem;">
+<table>
         <tr>
             <th>Project Name</th>
             <th>Status</th>
@@ -24,5 +24,9 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
         <tr>
             <td>4. Counter App</td>
             <td>Complete</td>
+        </tr>
+        <tr>
+            <td>5. Happy/Sad toggle btn</td>
+            <td>pending... </td>
         </tr>
     </table>

@@ -1,0 +1,16 @@
+:root {
+  --text-color:#000;
+}
+
+html {
+  font-size: 67.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
