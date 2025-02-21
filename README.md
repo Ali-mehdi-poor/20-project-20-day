@@ -11,3 +11,4 @@ This repository contains 20 projects for beginners with CSS, HTML, and JS that w
 | 3. Todo List Application  | Complete  |
 | 4. Counter App  | Complete  |
 | 5. Happy/Sad toggle btn  | Complete  |
+| 6. Drag/Drop | Complete  |
